@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-do-List - Estudos em TS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">                     <!-- Conteiner de Informações da div-->
+    <h1>Registre a Tarefa</h1>
+    
+    <!-- Início do formulário que agrupa os campos relacionados à adição de uma tarefa -->
+    
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Digite a tarefa" required /> 
+      <!-- Campo de texto onde o usuário vai digitar o nome ou descrição da tarefa
+       - `placeholder`: mostra um texto de ajuda dentro do campo
+       - `required`: impede que o formulário seja enviado sem preencher esse campo -->
+
+      <button type="submit">Nova Tarefa</button>
+      <!-- Botão que envia o formulário
+       - Como o botão está dentro do <form> com `type="submit"`, ao ser clicado ele dispara o envio da tarefa -->
+    </form>
+
+    <h2>Tarefas Pendentes</h2>
+    <ul id="task-list"></ul>
+    <!-- Lista não ordenada que será preenchida dinamicamente com as tarefas registradas
+     - Cada tarefa será adicionada aqui pelo TypeScript como um <li> (item de lista) -->
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

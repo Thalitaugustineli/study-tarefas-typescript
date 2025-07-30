@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;     /* Define a fonte da página. Se Arial não estiver disponível, usa uma fonte genérica sans-serif */
+  background-color: #b6d4df;          /* Cor de fundo suave para a página */
+  padding: 40px;                      /* Espaçamento interno (dentro do body) em todos os lados */
+  display: flex;                      /* Ativa o layout flexível (Flexbox) no corpo da página */
+  justify-content: center;           /* Alinha o conteúdo horizontalmente no centro */
+}
+
+.container {
+  background: #fff;                   /* Cor de fundo branca para a área central (onde está o formulário e lista) */
+  padding: 30px;                      /* Espaço interno dentro do container */
+  border-radius: 10px;                /* Bordas arredondadas no container */
+  max-width: 400px;                   /* Limita a largura máxima do container a 400px */
+  width: 100%;                        /* Faz com que o container ocupe todo o espaço disponível até o máximo permitido */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave ao redor do container, dando profundidade */
+}
+
+form {
+  display: flex;                      /* Usa flexbox para alinhar os elementos dentro do formulário lado a lado */
+  gap: 10px;                          /* Espaçamento de 10px entre os elementos do formulário */
+  margin-bottom: 20px;               /* Espaço abaixo do formulário, separando ele da seção de tarefas */
+}
+
+input[type="text"] {
+  flex: 1;                            /* Faz com que o campo ocupe todo o espaço disponível na linha */
+  padding: 10px;                      /* Espaçamento interno para tornar o campo mais confortável de usar */
+  border: 2px solid #ccc;            /* Borda cinza clara em volta do campo */
+  border-radius: 5px;                /* Bordas levemente arredondadas */
+}
+
+button {
+  padding: 10px;                      /* Espaço interno do botão */
+  background-color: #007bff;         /* Cor de fundo azul (padrão Bootstrap) */
+  color: white;                      /* Cor do texto do botão em branco */
+  border: none;                      /* Remove qualquer borda padrão do botão */
+  border-radius: 5px;                /* Bordas arredondadas */
+  cursor: pointer;                   /* Altera o cursor para “mãozinha” ao passar por cima do botão */
+}
+
+button:hover {
+  background-color: #0056b3;         /* Cor azul mais escura ao passar o mouse em cima do botão */
+}
+
+h2 {
+  margin-top: 20px;                  /* Espaço acima do subtítulo "Tarefas" */
+  color: #6fa8ce;                       /* Cor do texto do subtítulo */
+}
